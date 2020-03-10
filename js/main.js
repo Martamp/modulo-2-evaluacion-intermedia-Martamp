@@ -1,9 +1,11 @@
 'use strict';
 
-// const btn = document.querySelector('.js-button');
+const btn = document.querySelector('.js-button');
 
-// btn.addEventListener('click', function1);
+function getRandomNumber() {
+  let myNumber = Math.ceil(Math.random() * 100);
+  console.log(myNumber);
+  return myNumber;
+}
 
-// function generateRandomNumber() {}
-
-console.log('hola');
+btn.addEventListener('click', getRandomNumber);
