@@ -20,6 +20,10 @@ function getRandomNumber() {
   } else if (userNumberData > myRandomNumber) {
     textChange.innerHTML = 'Demasiado alto';
   }
+  function limpiarNumero(obj) {
+    userNumber.value = userNumber.value.replace('');
+  }
+  limpiarNumero();
 }
 
 btn.addEventListener('click', getRandomNumber);
